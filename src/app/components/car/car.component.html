@@ -3,9 +3,9 @@
     class="card col-md-3 mb-3 mx-3 pt-3 px-3"
     style="width: 18rem"
     *ngFor="let car of cars"
-    routerLink="/cars/details/{{ car.id }}"
+    routerLink="/cars/details/{{ car.carId }}"
   >
-    <div class="card-body">
+    <div class="col-md-2">
       <p class="card-text"><b>Model Year: </b>{{ car.modelYear }}</p>
       <p class="card-text"><b>Daily Price: </b>{{ car.dailyPrice }}</p>
       <p class="card-text"><b>Description: </b>{{ car.description }}</p>

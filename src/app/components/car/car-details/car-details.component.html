@@ -2,7 +2,7 @@
     <div
       class="card col-md-3 mb-3 mx-3 pt-3 px-3"
       style="width: 18rem"
-      *ngFor="let car of cars"
+      *ngFor="let carImage of carImages"
     >
       <img
         class="card-img-top"
@@ -15,7 +15,6 @@
         <p class="card-text"><b>Model Year: </b>{{ car.modelYear }}</p>
         <p class="card-text"><b>Daily Price: </b>{{ car.dailyPrice }}</p>
         <p class="card-text"><b>Description: </b>{{ car.description }}</p>
-        <p class="card-text"><b>Image Dath: </b>{{ car.carImageDate }}</p>
         <div class="row">
           <div class="col-md-8"></div>
           <div class="col-md-2">

@@ -10,6 +10,7 @@ import { CarService } from 'src/app/services/car.service';
 })
 export class CarDetailsComponent implements OnInit {
   cars: CarImage[];
+  carImages: any;
   constructor(private carService: CarService,
     private activatedRoute: ActivatedRoute) { }
 
@@ -27,19 +28,19 @@ export class CarDetailsComponent implements OnInit {
 
   getCarDetails(carId: number) {
     this.carService.getCarsDetails(carId).subscribe((response) => {
-      this.cars = response.data;
+      this.carImages = response.data;
     });
   }
 
   getCarsByColor(colorId: number) {
     this.carService.getCarsByColor(colorId).subscribe((response) => {
-      this.cars = response.data;
+      this.carImages = response.data;
     });
   }
 
   getCarsByBrand(brandId: number) {
     this.carService.getCarsByBrand(brandId).subscribe((response) => {
-      this.cars = response.data;
+      this.carImages = response.data;
     });
   }
 }
