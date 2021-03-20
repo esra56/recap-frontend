@@ -11,6 +11,7 @@ export class ColorComponent implements OnInit {
 
   colors: Color[] = [];
   currentColor:Color;
+  filterText:String;
 
   constructor(private colorService: ColorService) {}
   
@@ -34,5 +35,9 @@ getCurrentColorClass(color:Color){
   else{
     return "list-group-item"
   }
+}
+removeCurrentColor(){
+  this.filterText = "";
+  this.currentColor={colorId:-1,colorName:""};
 }
 }

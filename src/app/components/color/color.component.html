@@ -3,6 +3,6 @@
   <li (click)="setCurrentColor(color)"
   routerLink="cars/colors/{{color.colorId}}"
    [class]="getCurrentColorClass(color)"
-   *ngFor="let color of colors"> {{color.colorName}}</li> 
+   *ngFor="let color of colors | filterColor:filterText"> {{color.colorName}}</li> 
 
 </ul>

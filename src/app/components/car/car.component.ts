@@ -13,6 +13,7 @@ export class CarComponent implements OnInit {
   cars: Car[] = [];
   carImages: CarImage[] = [];
   dataLoaded=false;
+  filterText:String;
   
   constructor(private carService:CarService,private activatedRoute: ActivatedRoute) { }
 
