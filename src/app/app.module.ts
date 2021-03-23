@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilterBrandPipe } from './pipes/filter-brand.pipe';
 import { FilterColorPipe } from './pipes/filter-color.pipe';
 import { PaymentComponent } from './components/payment/payment.component';
-import { CarDetailsComponent } from './components/car-detail/car-detail.component';
+import { CarDetailComponent } from './components/car/car-details/car-details.component';
 import { CarFilterComponent } from './components/car-filter/car-filter.component';
 import { ToastrModule } from 'ngx-toastr';
 
@@ -32,7 +32,7 @@ import { ToastrModule } from 'ngx-toastr';
     FilterBrandPipe,
     FilterColorPipe,
     PaymentComponent,
-    CarDetailsComponent,
+    CarDetailComponent,
     CarFilterComponent
   ],
   imports: [
