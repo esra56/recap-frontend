@@ -15,6 +15,5 @@ export class FilterColorPipe implements PipeTransform {
               .indexOf(filterText.toString()) !== -1
         )
       : value;
-
-}
+  }
 }
