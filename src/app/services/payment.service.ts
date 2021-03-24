@@ -13,6 +13,7 @@ export class PaymentService {
   constructor(private httpClient:HttpClient) { }
   pay(rental:Rental,amount:Number):Observable<ResponseModel>{
     let path = environment.apiUrl+"rentals/paymentadd";
+    rental.returnDate = undefined;
     return this.httpClient.post<ResponseModel>(path,{payment:{amount:amount},rental:rental});
   }
 }
