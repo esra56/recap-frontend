@@ -2,10 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Car } from 'src/app/models/car';
 import { Customer } from 'src/app/models/customer';
-import { Rental } from 'src/app/models/rental';
 import { CustomerService } from 'src/app/services/customer.service';
 import { RentalService } from 'src/app/services/rental.service';
 import { ToastrService } from 'ngx-toastr';
+import { Rental } from 'src/app/models/rental';
 
 @Component({
   selector: 'app-rental',
@@ -48,6 +48,6 @@ createRental(){
     customerId: parseInt(this.customerId.toString())
   }
   this.router.navigate(['/payment/', JSON.stringify(MyRental)]);
-  this.toastr.info("Ödeme sayfasına yönlendiriliyorsunuz...", "Ödeme İşlemleri");
-  
+  this.toastr.info("Ödeme sayfasına yönlendiriliyorsunuz...", "Ödeme İşlemleri");  
+}
 }

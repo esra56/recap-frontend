@@ -17,7 +17,7 @@
     <li
     (click)="setCurrentColor(color)"
     [ngClass]="getCurrentColorClass(color)"
-    routerLink="/cars/color/{{color.id}}"
+    routerLink="/cars/color/{{color.colorId}}"
     *ngFor="let color of colors | filterColor:filterText">
     {{color.colorName}}</li>
  
