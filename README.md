@@ -28,5 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Author
 
-Esra Cellek - [github](https://github.com/esra56) - [likendIn](https://www.linkedin.com/in/esra-cellek-b03a00201/)
+Esra Cellek - [Github](https://github.com/esra56) - [LinkedIn](https://www.linkedin.com/in/esra-cellek-b03a00201/)
 
