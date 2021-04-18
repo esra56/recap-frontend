@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Distribution
+
+This project licenced and distributed under MIT Licence. Please read the LICENCE file for more information.
+
+## Author
+
+Esra Cellek - [github](https://github.com/esra56) - [likendIn](https://www.linkedin.com/in/esra-cellek-b03a00201/)
+
